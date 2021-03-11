@@ -1,0 +1,100 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Pooja Shiwakoti | Coming-soon </title>
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-freedom.css">
+    <link href="//fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800&amp;subset=devanagari,latin-ext" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Niramit:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet">
+  </head>
+  <body id="home">
+<section class="kam-coming-soon">
+  <div class=" new-comingsoon text-center">
+    <div class="container">
+      <div class="logo-widget">
+        <h1><a class="brand-logo" href="index.html">Pooja Shiwakoti</a></h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="pages-err">
+        <h2>We Will be Back Soon</h2>
+        <p class="para">Consectetur Lorem ipsum dolor, sit amet adipisicing elit. Officiis, ipsum. Labore totam quasi
+          incidunt excepturi error tenetur aliquam laboriosam, itaque dignissimos libero quam obcaecati, odit rerum
+          voluptate eius, exercitationem cumque.</p>
+        <div class="countdown">
+          <div class="countdown__days">
+            <div class="number">350</div>
+            <span class="">Days</span>
+          </div>
+
+          <div class="countdown__hours">
+            <div class="number">7</div>
+            <span class="">Hours</span>
+          </div>
+
+          <div class="countdown__minutes">
+            <div class="number">38</div>
+            <span class="">Minutes</span>
+          </div>
+
+          <div class="countdown__seconds">
+            <div class="number">56</div>
+            <span class="">Seconds</span>
+          </div>
+        </div>
+        <div class="newsletter">
+          <form action="#" methos="GET" class="d-flex wrap-fields error-filds">
+            <input type="text" placeholder="Enter Email.." required="required">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="columns-copy ">
+        <p class="copy-footer-29">@2021 Kamal Ghimire. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      // Specify the deadline date
+      const deadlineDate = new Date('December 31, 2020 23:59:59').getTime();
+
+      // Cache all countdown boxes into consts
+      const countdownDays = document.querySelector('.countdown__days .number');
+      const countdownHours = document.querySelector('.countdown__hours .number');
+      const countdownMinutes = document.querySelector('.countdown__minutes .number');
+      const countdownSeconds = document.querySelector('.countdown__seconds .number');
+
+      // Update the count down every 1 second (1000 milliseconds)
+      setInterval(() => {
+        // Get current date and time
+        const currentDate = new Date().getTime();
+
+        // Calculate the distance between current date and time and the deadline date and time
+        const distance = deadlineDate - currentDate;
+
+        // Calculations the data for remaining days, hours, minutes and seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Insert the result data into individual countdown boxes
+        countdownDays.innerHTML = days;
+        countdownHours.innerHTML = hours;
+        countdownMinutes.innerHTML = minutes;
+        countdownSeconds.innerHTML = seconds;
+      }, 1000);
+    })();
+  </script>
+</section>
